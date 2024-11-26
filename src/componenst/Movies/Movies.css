@@ -1,0 +1,138 @@
+
+.top {
+    background: #4e2a2a; 
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    padding: 40px 20px;
+    letter-spacing: 2px;
+    font-size: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px;
+    margin-bottom: 40px; 
+  }
+  
+  
+  .movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; 
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  
+  .movie-card {
+    width: 240px; 
+    padding: 20px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+  }
+  
+  
+
+  .movie-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); 
+  }
+  
+  
+  .movie-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .movie-card:hover img {
+    opacity: 0.85; 
+  }
+  
+  
+  .movie-card h2 {
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+    margin-top: 10px;
+    text-transform: capitalize;
+    transition: color 0.3s ease;
+  }
+  
+  .movie-card:hover h2 {
+    color: #e74c3c; 
+  }
+  
+  
+  .error {
+    color: #e74c3c; 
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 40px;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .movie-container {
+      padding: 10px;
+    }
+  
+    .movie-card {
+      width: 180px; 
+      padding: 15px;
+    }
+  
+    .top {
+      font-size: 32px; 
+      padding: 30px 15px;
+    }
+  }
+  
+
+/* 
+
+.top{
+    background: brown;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+.movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .movie-card {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .movie-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .movie-card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .error {
+    color: red;
+    font-weight: bold;
+  } */

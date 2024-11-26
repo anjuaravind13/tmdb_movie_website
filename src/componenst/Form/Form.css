@@ -1,0 +1,91 @@
+
+.formPage {
+    background-color: #f0f4f8; 
+    font-family: 'Roboto', Arial, sans-serif; 
+    height: 100vh;
+    margin: 0;
+  }
+  
+ 
+  form {
+    background: #ffffff;
+    padding: 40px 50px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1), -4px -4px 15px rgba(255, 255, 255, 0.7); /* Neumorphism effect */
+    width: 100%;
+    max-width:1200px;
+    transition: box-shadow 0.3s ease-in-out;
+    margin: auto;
+  }
+  
+ 
+  form:hover {
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.15), -6px -6px 20px rgba(255, 255, 255, 0.8); /* Light shadow on hover */
+  }
+  
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 10px;
+    background-color: #f4f7fc; 
+    font-size: 16px;
+    color: #333;
+    transition: background-color 0.3s, box-shadow 0.3s ease;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1), inset -2px -2px 5px rgba(255, 255, 255, 0.7); /* Neumorphism */
+  }
+  
+  
+  input[type="text"]:focus {
+    background-color: #ffffff; 
+    border: 2px solid #007bff; 
+    outline: none;
+    box-shadow: inset 2px 2px 8px rgba(0, 0, 0, 0.2), inset -2px -2px 8px rgba(255, 255, 255, 0.8); /* Enhanced focus effect */
+  }
+  
+  /* Heading styling */
+  h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  /* Add a subtle hover effect to buttons (if any) */
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Slight scaling on hover */
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 600px) {
+    form {
+      padding: 30px 20px; 
+      margin: 40px 20px;
+    }
+  
+    h1 {
+      font-size: 22px;
+    }
+  
+    input[type="text"] {
+      padding: 12px;
+      font-size: 14px; 
+    }
+  }
+  

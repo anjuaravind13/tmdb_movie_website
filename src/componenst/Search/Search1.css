@@ -1,0 +1,64 @@
+/* Search input styling */
+input[type="search"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+  }
+  
+  input[type="search"]:focus {
+    border-color: #007bff;
+  }
+  
+  /* Dropdown container */
+  .search {
+    position: absolute; /* Position relative to the parent container */
+     /* Ensure it stretches to match the width of the input */
+     /* Limit the height of the dropdown */
+    overflow-y: auto; /* Add scrolling if the dropdown is too long */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  /* Individual suggestion styling */
+  .search-img {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-img:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .search-img img {
+    width: 40px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .search-img h1 {
+    font-size: 16px;
+    margin: 0;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* Prevent dropdown from showing when there are no suggestions */
+  .search.hide {
+    display: none;
+  }
+  
+  

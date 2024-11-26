@@ -1,0 +1,43 @@
+.skeleton-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px;
+    background: #f0f0f0; /* Light gray background for the skeleton */
+    margin-bottom: 20px;
+  }
+  
+  .skeleton-title {
+    height: 24px;
+    width: 80%; /* Width of the title */
+    background: #e0e0e0; /* Slightly darker gray for the title */
+    border-radius: 4px;
+    margin-bottom: 10px;
+    animation: pulse 1.5s infinite; /* Pulsing effect */
+  }
+  
+  .skeleton-text {
+    height: 16px;
+    width: 100%; /* Full width for the text */
+    background: #e0e0e0;
+    border-radius: 4px;
+    margin-bottom: 6px;
+    animation: pulse 1.5s infinite; /* Pulsing effect */
+  }
+  
+  .skeleton-text.short {
+    width: 60%; /* Shorter width for a line of text */
+  }
+  
+  @keyframes pulse {
+    0% {
+      background-color: #e0e0e0;
+    }
+    50% {
+      background-color: #d0d0d0; /* Darker gray in the middle */
+    }
+    100% {
+      background-color: #e0e0e0;
+    }
+  }
+  
