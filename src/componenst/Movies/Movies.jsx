@@ -7,9 +7,6 @@ import { Link } from "react-router-dom";
 
 let TMDB_TOKEN = import.meta.env.VITE_TMDB_TOKEN
 
-
-
-
 function Movies() {
   let [data, setData] = useState([]);
 
@@ -33,24 +30,30 @@ function Movies() {
   }, []);
 
   return (
-    <div>
-      <div className="top">MOVIES</div>
-      <div className="movie-container">
+
+    <>
+    <div className="movie-section">
+      <div className="movies-container">
         {data.map((obj, index) => {
           return (
-            <div key={obj.id} className="movie-card">
-              <Link to={`/movies/${obj.id}`}>
-                <h1>{obj.title?obj.title:'NO TITLE'}</h1>
-                <img
-                  src={`https://image.tmdb.org/t/p/w500/${obj?.poster_path}`}
-                  alt=""
-                />
+            <div key={obj.id}>
+              <Link to={`/movie/${obj.id}`} className="movie-link">
+                <div className="movie-item">
+                  <img
+                    src={`https://image.tmdb.org/t/p/w500/${obj.poster_path}`}
+                    alt=""
+                  />
+                  <h1>{obj.title ? obj.title : "no title"}</h1>
+                </div>
               </Link>
             </div>
           );
         })}
       </div>
     </div>
+  </>
+
+  
   );
 }
 

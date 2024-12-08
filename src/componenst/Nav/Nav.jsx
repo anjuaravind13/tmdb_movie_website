@@ -4,37 +4,33 @@ import "./Nav.css";
 import Search from "../Search/Search";
 
 function Nav() {
-
   let navigate = useNavigate();
+  
   function goToHome() {
-    navigate("/movies");
+    navigate("/");
   }
   return (
     <div className="nav">
       <div className="nav-one">
-        <button className="home-button" onClick={goToHome}>check</button>
+        <button className="home-button" onClick={goToHome}>
+          Movies
+        </button>
       </div>
-      
-     
-       
+
       <div className="nav-two">
-        
-    
         <ul className="nav-list">
-        <li>
-        <Search/>
-        </li>
           <li>
-            <Link className="link1" to={"/"} exact activeClassName="active-link">HOME</Link>
+            <Search />
           </li>
           <li>
-            <Link className="link1" to={"/form"} exact activeClassName="active-link">FORM</Link>
-          </li>
-          <li>
-            <Link className="link1" to={"/movies"} exact activeClassName="active-link">MOVIES</Link>
-          </li>
-          <li>
-            <Link className="link1" to={"/counter"} exact activeClassName="active-link">COUNTER</Link>
+            <Link
+              className="link1"
+              to={"/"}
+              exact
+              activeClassName="active-link"
+            >
+              HOME
+            </Link>
           </li>
         </ul>
       </div>

@@ -16,10 +16,10 @@ export const App = () => {
       <BrowserRouter>
       <Nav/>
       <Routes>
-        <Route path="/" element={<Home/>}/>
+        <Route path="/" element={<Movies/>}/>
         <Route path="/:id" element={<PostDetails/>}/>
         <Route path="/form" element={<Form/>}/>
-        <Route path="/movies" element={<Movies/>}/>
+        {/* <Route path="/movies" element={<Movies/>}/> */}
         <Route path="/movies/:id" element={<MovieDetails/>}/>
         <Route path="/counter" element={<Counter/>}/>
         <Route path="/*" element={<Error/>}/>
